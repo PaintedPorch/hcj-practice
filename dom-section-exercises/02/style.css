@@ -25,6 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-width: 325px;
 }
 
 #main-heading {
@@ -44,17 +45,44 @@ body {
     width: 25%;
     border: 5px solid black;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    min-width: 75px;
+}
+
+.txt {
+    margin: 0;
+    font-size: 22px;
+}
+
+.btn {
+    padding: 8px 25px;
+    background-color: transparent;
+    color: darkgray;
+    border: 2px solid darkgray;
+    border-radius: 5px;
 }
 
 @media (max-width: 550px) {
     #main-heading {
         font-size: 34px;
     }
+    .txt {
+        font-size: 18px;
+    }
+    .btn {
+        padding: 8px 15px;
+    }
 }
 
 @media (max-width: 425px) {
     #main-heading {
         font-size: 28px;
+    }
+    .txt {
+        font-size: 14px;
     }
 }
 
