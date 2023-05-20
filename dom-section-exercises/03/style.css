@@ -1,5 +1,8 @@
 * {
     font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
 }
 
 html {
@@ -10,4 +13,49 @@ html {
 body {
     height: 100%;
     width: 100%;
+    background-image: radial-gradient(rgb(0, 0, 77), black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 85%;
+    height: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main-heading {
+    font-size: 48px;
+}
+
+.card-container {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card {
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card:nth-child(1) {
+    width: 40%;
+    height: 100%;
+}
+.card:nth-child(2) {
+    width: 60%;
+    height: 100%;
+    text-align: center;
 }
