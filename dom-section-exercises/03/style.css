@@ -59,3 +59,11 @@ body {
     height: 100%;
     text-align: center;
 }
+
+.content-card {
+    display: none;
+}
+
+.content-card.reveal-card {
+    display: flex;
+}
