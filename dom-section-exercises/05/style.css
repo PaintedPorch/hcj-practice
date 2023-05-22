@@ -48,6 +48,11 @@ body {
     min-width: 85px;
 }
 
+.background {
+    background-color: white;
+    color: black;
+}
+
 @media (max-width: 700px) {
     .item {
         font-size: 18px;
