@@ -1,0 +1,66 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    height: 93%;
+    background-image: url(./images/forest_bg.jpg);
+    background-size: 110% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25%;
+}
+
+.pop-up {
+    width: 20%;
+    height: 13%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 5px white;
+    margin-top: 25%;
+}
+
+.txt {
+    font-size: 18px;
+}
+
+.x {
+    font-size: 36px;
+    border: 0;
+    font-weight: 300;
+}
+
+.btn {
+    width: 25%;
+    height: 10%;
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 60%;
+}
