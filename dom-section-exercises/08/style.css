@@ -61,16 +61,17 @@ body {
 
 }
 
-.btn {
+.btn, .btn1, .btn2 {
     background-color: transparent;
     border: none;
     font-size: 18px;
 }
 
-.hidden-content {
+.hidden-content, .hidden-content1, .hidden-content2 {
     width: 100%;
     height: 20%;
-    display: flex;
+    display: none;
+    transition: .5s;
 }
 
 .hidden-txt {
