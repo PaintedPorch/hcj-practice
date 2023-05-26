@@ -30,10 +30,11 @@ body {
     align-items: center;
     flex-direction: column;
     min-width: 300px;
+    min-height: 200px;
 }
 
 #time {
-    font-size: 48px;
+    font-size: 72px;
     font-weight: 500;
 }
 
@@ -43,10 +44,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
-.btn {
+#play-pause, #reset {
     border: 1px solid white;
 }
 
