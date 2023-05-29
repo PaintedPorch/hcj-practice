@@ -48,6 +48,16 @@ input {
 }
 
 #add-task {
-    
+    font-size: 1.1rem;
+    padding: 5px 8px;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+#add-task:hover {
+    background-color: rgb(185, 185, 185);
+    color: white;
+    border-color: rgb(0, 0, 0);
 }
 
