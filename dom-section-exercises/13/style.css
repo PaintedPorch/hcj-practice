@@ -70,10 +70,22 @@ body {
     max-height: 400px;
 }
 
+#profile {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
 #profile-picture {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: -15px;
     box-shadow: 7px -2px 0 2px rgb(0, 201, 201);
     min-height: 150px;
     min-width: 150px;
@@ -90,15 +102,16 @@ body {
     color: rgb(0, 201, 201);
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
+    margin-top: 3px;
 }
 
 #description {
     font-size: 14px;
+    margin: 0 5px;
 }
 
 .left-right {
-    padding-top: 5px;
     width: 10%;
     height: 5%;
     display: flex;
@@ -115,7 +128,7 @@ button {
     border: none;
     font-size: 32px;
     color: rgb(0, 201, 201);
-    padding: 0;
+    margin-top: 20px;
 }
 
 #left:hover, #right:hover {
@@ -129,7 +142,6 @@ button {
     border-radius: 10px;
     padding: 3px 5px;
     color: rgb(0, 201, 201);
-    margin-top: 5px;
     font-size: 12px;
 }
 
@@ -149,6 +161,9 @@ button {
 @media (max-width: 850px) {
     #main-heading {
         font-size: 42px;
+    }
+    #description {
+        margin-bottom: 15px;
     }
 }
 
