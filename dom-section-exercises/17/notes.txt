@@ -1,0 +1,23 @@
+-The DOM (document object model) can be described as a visual structure of your HTML code. The DOM starts with the Document, this is the parent of the highest to us visible element, the html element. This html element parents the head and body from which all other html code stems. From the head and body onwards you can go by the general rule that every indentation level is a child of the item it is indented in. Things like class or id get put as a side-branch esque structure of the element, thus making it different from the already named structures of parent and child elements. These nodes are properties and they aren't noted with special terms. 
+
+-You have five ways of selecting nodes. These are: GetElementById(), GetElementByClassName(), getElementsByTagName(), querySelector() and querySelectorAll(). All of these are methods executed on the document object and thus look like document.method()
+
+-To change the style of an object you can use selectedNodeVariable.style.thingtochange = "valueToBe";
+
+-To create items you can use document.createElement("typeOfElement");
+-To add a class to the element you can use newItem.setAttribute("attributeToSet", "value");
+-To remove an attribute you can use itemName.removeAttribute("attributeToRemove");
+-To append the item to the html (doesn't display in the HTML since you're changing the DOM only) you can use locationToPlaceItem.appendChild(itemName);
+
+-To get the value attached to an attribute you can use item.getAttribute("attribute");
+
+-To check if an item has a certain class you can use item.classList.contains("className");
+-To add a class you can use item.classList.add("className");
+-By using classList.remove("class") in combination with classList.add("class") in an if-statement you can create different styles based on events. If the item doesn't have a class add it (with its new styling) and if it does remove it (revert to original styling). This can be toggled with EventListener events that can toggle on classes with stylings attached to them. 
+
+-To add an eventListener you can use item.addEventListener("event", action);
+-Often used events are click and mouseover.
+
+The DOM works in 3 phases, event capturing, target and event bubbling. Capturing is going down the DOM to find the target, notifying other elements that it is going to do something to a lower element, the target phase is when the target is found and it starts transitioning to the bubbling phase. Bubbling is going up the DOM, notifying every higher element of the event to be executed. 
+
+You can use the window,setInterval(function, timeinms); to use a function at a set interval, in the case of 1000 this would be every second. This can be used for timed events.
