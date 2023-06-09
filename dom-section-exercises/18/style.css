@@ -28,15 +28,17 @@ body {
 #main-heading {
     margin-bottom: 10px;
     font-size: 48px;
+    margin-top: 20px;
 }
 
 #main-underline {
     width: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-color: rgb(247, 148, 0);
     color: rgb(247, 148, 0);
     height: 4px;
     border: none;
+    margin-top: 5px;
 }
 
 #buttons {
@@ -46,11 +48,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-bottom: 2%;
+    margin-bottom: 2.5%;
 }
 
 button {
-    padding: 5px 10px;
+    padding: 7px 14px;
     background-color: transparent;
     color: rgb(247, 148, 0);
     border: 2px solid rgb(247, 148, 0);
@@ -71,12 +73,15 @@ button:hover {
     flex-wrap: wrap;
     gap: 15px;
     min-width: 300px;
+    max-width: 1200px;
+    overflow: scroll;
+    scroll-behavior: smooth;
 }
 
 .item {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 45%;
     gap: 15px;
     min-width: 360px;
@@ -93,7 +98,7 @@ img {
 
 .item-content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     gap: 5px;
@@ -125,7 +130,6 @@ img {
 
 .description {
     font-size: 12px;
-    max-width: 175px;
     min-width: 175px;
 }
 
@@ -133,6 +137,7 @@ img {
     .item {
         width: 75%;
         flex-direction: column;
+        align-items: center;
     }
     .top-text {
         justify-content: center;
@@ -143,7 +148,7 @@ img {
         text-align: center;
     }
     #buttons {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     img {
         width: 40%;
@@ -151,5 +156,142 @@ img {
         min-height: 150px;
         min-width: 225px;
         max-height: 175px;
+    }
+    .title-separator {
+        width: 50%;
+        min-width: 200px;
+    }
+    .last {
+        margin-bottom: 30px;
+    }
+    #main-heading {
+        font-size: 44px;
+    }
+}
+
+@media (min-width: 850px) {
+    img {
+        width: 200px;
+        height: 130px;
+        min-height: 130px;
+        min-width: 200px;
+        max-height: 130px;
+        max-width: 200px;
+    }
+    .item {
+        width: 47%;
+    }
+    .item-content {
+        width: 45%;
+        gap: 7px;
+        align-items: flex-start;
+    }
+    .description {
+        width: 100%;
+    }
+    .top-text {
+        gap: 10px;
+    }
+    .item-name, .price {
+        font-size: 15px;
+    }
+    .description {
+        font-size: 13px;
+    }
+    #item-container {
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 1000px) {
+    img {
+        width: 250px;
+        height: 160px;
+        min-height: 160px;
+        min-width: 250px;
+    }
+    .item-content {
+        width: 45%;
+        gap: 10px;
+        align-items: flex-end;
+    }
+    .item {
+        width: 47%;
+    }
+    .description {
+        width: 100%;
+        font-size: 14px;
+    }
+    .item-name, .price {
+        font-size: 16px;
+    }
+    #item-container {
+        height: 75%;
+        gap: 25px;
+    }
+    #main-heading {
+        font-size: 52px;
+    }
+}
+
+@media (min-width: 1300px) {
+    img {
+        width: 280px;
+        height: 175px;
+        min-height: 175px;
+        min-width: 280px;
+    }
+    .item-content {
+        width: 45%;
+        gap: 10px;
+        align-items: flex-end;
+    }
+    .item {
+        width: 47%;
+    }
+    .description {
+        width: 100%;
+        font-size: 16px;
+    }
+    .item-name, .price {
+        font-size: 18px;
+    }
+    #item-container {
+        height: 75%;
+        gap: 30px;
+    }
+    #main-heading {
+        font-size: 54px;
+    }
+}
+
+@media (min-width: 1500px) {
+    img {
+        width: 300px;
+        height: 190px;
+        min-height: 190px;
+        min-width: 300px;
+    }
+    .item-content {
+        width: 45%;
+        gap: 12px;
+        align-items: flex-end;
+    }
+    .item {
+        width: 47%;
+    }
+    .description {
+        width: 100%;
+        font-size: 18px;
+    }
+    .item-name, .price {
+        font-size: 20px;
+    }
+    #item-container {
+        height: 75%;
+        gap: 35px;
+    }
+    #main-heading {
+        font-size: 56px;
     }
 }
